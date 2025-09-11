@@ -6,6 +6,10 @@ import { CTA } from "./components/sections/CallToAction";
 import { Hero } from "./components/sections/Hero";
 import { Pricing } from "./components/sections/Pricing";
 import { Services } from "./components/sections/Services";
+import { Trust } from "./components/sections/Trust";
+import { Footer } from "./components/elements/Footer";
+import { PromotionsUrgency } from "./components/sections/PromotionsUrgency";
+import { VisualGallery } from "./components/sections/VisualGallery";
 
 function App() {
   return (
@@ -20,7 +24,6 @@ function App() {
       <Brands />
       <Pricing />
       <CTA />
-      <Footer/>
     </Layout>
   );
 }
