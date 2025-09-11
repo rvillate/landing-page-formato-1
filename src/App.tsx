@@ -10,13 +10,17 @@ import { Services } from "./components/sections/Services";
 function App() {
   return (
     <Layout title="EdgeAI">
-      <MapPoints/>
       <Hero />
-      <Brands />
       <Services />
+      <Trust/>
+      <PromotionsUrgency/>
+      <VisualGallery/>
+      <MapPoints/>
       <AboutUs />
+      <Brands />
       <Pricing />
       <CTA />
+      <Footer/>
     </Layout>
   );
 }
