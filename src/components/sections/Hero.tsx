@@ -2,12 +2,17 @@ import { Button } from "../shared/Button";
 import { Container } from "../shared/Container";
 import { Paragraph } from "../shared/Paragraph";
 import { Numbers } from "./Numbers";
+import { useTranslation } from "react-i18next";
+
+import heroImg from "../../assets/images/hero/image1.webp";
 
 export const Hero = () => {
+  const { t } = useTranslation();
+
   return (
     <section className="relative pt-20 lg:pt-30">
-      {" "}
       <Container className="flex flex-col lg:flex-row gap-10 lg:gap-12">
+        {/* Fondos decorativos */}
         <div className="absolute w-full lg:w-1/2 inset-y-0 lg:right-0">
           <span
             className="absolute -left-6 md:left-4 top-24 lg:top-28 w-24 h-24 rotate-90 
@@ -17,22 +22,21 @@ export const Hero = () => {
           <span className="absolute right-4 bottom-12 w-24 h-24 rounded-3xl bg-primary blur-xl opacity-80"></span>
         </div>
 
+        {/* Texto principal */}
         <div
           className="relative flex flex-col items-center text-center lg:text-left lg:py-8 lg:items-start
                         lg:max-w-none max-w-3xl mx-auto lg:mx-0 lg:flex-1 lg:w-1/2"
         >
           <h1 className="text-heading-1 text-3xl sm:text-4xl md:text-5xl xl:text-6xl font-bold">
-            Empower Your Business
+            {t("hero.title")}
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-violet-600 ml-2">
-              with AI{" "}
+              {t("hero.highlight")}
             </span>
           </h1>
-          <Paragraph className="mt-8">
-            Our AI SaaS platform seamlessly integrates with your existing
-            workflows to deliver real‑time insights, intelligent automation, and
-            data‑driven decision-making. Experience a future where your business
-            runs smarter, faster, and more efficiently.
-          </Paragraph>
+
+          <Paragraph className="mt-8">{t("hero.subtitle")}</Paragraph>
+
+          {/* Formulario / CTA */}
           <div className="mt-10 w-full flex max-w-md mx-auto lg:mx-0">
             <div className="flex sm:flex-row flex-col gap-5 w-full">
               <form
@@ -43,7 +47,6 @@ export const Hero = () => {
                                           focus-within:border-primary"
               >
                 <span className="min-w-max pr-2 border-r border-box-border">
-                  {" "}
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="20"
@@ -61,25 +64,27 @@ export const Hero = () => {
                   </svg>
                 </span>
                 <input
-                  type="email"
-                  placeholder="johndoe@gmail.com"
+                  type="tel"
+                  placeholder={t("hero.placeholder")}
                   className="w-full py-3 outline-none bg-transparent"
                 />
                 <Button className="min-w-max text-white">
-                  <span className="relative z-[5]">Get Started</span>
+                  <span className="relative z-[5]">{t("hero.cta")}</span>
                 </Button>
               </form>
             </div>
           </div>
         </div>
 
+        {/* Imagen hero */}
         <div className="flex flex-1 lg:w-1/2 lg:h-auto relative lg:max-w-non lg:mx-0 mx-auto max-w-3xl">
           <img
-            src="https://images.pexels.com/photos/7773731/pexels-photo-7773731.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+            src={heroImg}
             alt="Hero image"
             width={2350}
             height={2359}
             className="lg:absolute lg:w-full lg:h-full rounded-3xl object-cover lg:max-h-non max-h-96"
+            style={{ objectPosition: "50% 30%" }} 
           />
         </div>
       </Container>
