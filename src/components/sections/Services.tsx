@@ -1,3 +1,4 @@
+import { t } from "i18next";
 import { services } from "../../utils/services-data";
 import { Service } from "../cards/Service";
 import { Container } from "../shared/Container";
@@ -10,10 +11,9 @@ export const Services = () => {
       {" "}
       <Container className="space-y-10 md:space-y-12">
         <div className="text-center max-w-3xl mx-auto space-y-4">
-          <Title> Our AI Services</Title>
+          <Title> {t("services.title")}</Title>
           <Paragraph>
-            Unlock the potential of advanced machine learning, natural language
-            processing, and predictive analytics. Our services include:
+            {t("services.description")}
           </Paragraph>
         </div>
 
@@ -23,7 +23,8 @@ export const Services = () => {
               key={key}
               title={service.title}
               description={service.description}
-              icon={service.icon}
+              icon={service.src}
+              alt={service.alt}
             />
           ))}
         </div>

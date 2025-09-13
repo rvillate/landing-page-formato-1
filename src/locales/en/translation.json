@@ -1,9 +1,39 @@
 {
+  "common": {
+    "companyName": "SmartLockers"
+  },
   "hero": {
     "title": "Your trusted locksmith",
     "highlight": "24/7",
     "subtitle": "Fast and secure service for door openings, lock changes, and automotive locksmithing. We arrive within minutes!",
     "placeholder": "Your phone number",
     "cta": "Call now"
+  },
+  "visualGallery": {
+    "title": "Get to know our work"
+  },
+  "services": {
+    "title": "Our Services",
+    "description": "Discover the services we offer to meet your locksmith needs:"
+  },
+  "servicesList": {
+    "service1": {
+      "title": "Door Opening",
+      "description": "We open house, car, and office doors without damage, quickly and securely.",
+      "alt": "Door Opening"
+    },
+    "service2": {
+      "title": "Lock Change",
+      "description": "We install and replace high-security locks for your peace of mind.",
+      "alt": "Lock Change"
+    },
+    "service3": {
+      "title": "Emergencies 24/7",
+      "description": "Immediate attention in emergency cases, any day and time.",
+      "alt": "Emergencies 24/7"
+    }
+  },
+  "map": {
+    "title": "Locations of Interest"
   }
 }

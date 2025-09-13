@@ -1,9 +1,39 @@
 {
+  "common": {
+    "companyName": "SmartLockers"
+  },
   "hero": {
     "title": "Tu cerrajero de confianza",
     "highlight": "24/7",
     "subtitle": "Servicio rápido y seguro en apertura de puertas, cambio de cerraduras y cerrajería automotriz. ¡Atendemos en minutos!",
     "placeholder": "Tu número de contacto",
     "cta": "Llamar ahora"
+  },
+  "visualGallery": {
+    "title": "Conoce nuestro trabajo"
+  },
+  "services": {
+    "title": "Nuestros Servicios",
+    "description": "Conoce los servicios que ofrecemos para satisfacer tus necesidades de cerrajería:"
+  },
+  "servicesList": {
+    "service1": {
+      "title": "Apertura de Puertas",
+      "description": "Abrimos puertas de casas, autos y oficinas sin daños, rápido y seguro.",
+      "alt": "Apertura de Puertas"
+    },
+    "service2": {
+      "title": "Cambio de Cerraduras",
+      "description": "Instalamos y reemplazamos cerraduras de alta seguridad para tu tranquilidad.",
+      "alt": "Cambio de Cerraduras"
+    },
+    "service3": {
+      "title": "Urgencias 24/7",
+      "description": "Atención inmediata en casos de emergencia, cualquier día y hora.",
+      "alt": "Urgencias 24/7"
+    }
+  },
+  "map": {
+    "title": "Ubicaciones de Interés"
   }
 }

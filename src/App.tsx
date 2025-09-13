@@ -7,23 +7,24 @@ import { Hero } from "./components/sections/Hero";
 import { Pricing } from "./components/sections/Pricing";
 import { Services } from "./components/sections/Services";
 import { Trust } from "./components/sections/Trust";
-import { Footer } from "./components/elements/Footer";
 import { PromotionsUrgency } from "./components/sections/PromotionsUrgency";
 import { VisualGallery } from "./components/sections/VisualGallery";
+import { Numbers } from "./components/sections/Numbers";
 
 function App() {
   return (
     <Layout title="EdgeAI">
       <Hero />
+      {/* <Numbers /> */}
       <Services />
-      <Trust/>
-      <PromotionsUrgency/>
+      {/* <Trust/> */}
+      {/* <PromotionsUrgency/> */}
       <VisualGallery/>
       <MapPoints/>
-      <AboutUs />
-      <Brands />
-      <Pricing />
-      <CTA />
+      {/* <AboutUs /> */}
+      {/* <Brands /> */}
+      {/* <Pricing /> */}
+      {/* <CTA /> */}
     </Layout>
   );
 }

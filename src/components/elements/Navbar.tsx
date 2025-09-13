@@ -3,6 +3,7 @@ import logo from "/assets/icon.svg";
 import { NavItem } from "../shared/NavItem";
 import { BtnLink } from "../shared/BtnLink";
 import { useThemeStore } from "../../store/ThemeStore";
+import { t } from "i18next";
 
 export const navItems = [
   { href: "#", text: "Home" },
@@ -21,9 +22,9 @@ export const Navbar = () => {
           {/* Logo */}
           <div className="min-w-max inline-flex relative">
             <a href="/" className="relative flex items-center gap-3">
-              <img src={logo} alt="EdgeAI Logo" className="w-10 h-10" />
+              <img src={logo} alt="SmartLockers" className="w-10 h-10" />
               <div className="inline-flex text-lg font-semibold text-heading-1">
-                EdgeAI
+                {t("common.companyName")}
               </div>
             </a>
           </div>
@@ -47,7 +48,13 @@ export const Navbar = () => {
                             lg:pb-0 border-b border-box-border lg:border-0
                             px-6 lg:px-0"
             >
-              <BtnLink text="Get Started" href="#cta" className="" />
+              <BtnLink
+                text="Get Started"
+                href="#cta"
+                className={
+                  theme === "dark" ? "text-white" : "text-black"
+                }
+              />
             </div>
           </div>
 

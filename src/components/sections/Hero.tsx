@@ -1,17 +1,16 @@
 import { Button } from "../shared/Button";
 import { Container } from "../shared/Container";
 import { Paragraph } from "../shared/Paragraph";
-import { Numbers } from "./Numbers";
 import { useTranslation } from "react-i18next";
 
-import heroImg from "../../assets/images/hero/image1.webp";
+import heroImg from "/assets/images/hero/image1.webp";
 
 export const Hero = () => {
   const { t } = useTranslation();
 
   return (
     <section className="relative pt-20 lg:pt-30">
-      <Container className="flex flex-col lg:flex-row gap-10 lg:gap-12">
+      <Container className="flex flex-col lg:flex-row gap-10 lg:gap-12 pb-0 lg:pb-0">
         {/* Fondos decorativos */}
         <div className="absolute w-full lg:w-1/2 inset-y-0 lg:right-0">
           <span
@@ -88,7 +87,6 @@ export const Hero = () => {
           />
         </div>
       </Container>
-      <Numbers />
     </section>
   );
 };
