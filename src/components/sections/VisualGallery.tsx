@@ -27,7 +27,7 @@ export const VisualGallery = () => {
   }, []);
 
   return (
-    <div>
+    <div className="mt-10 mb-20 px-4 lg:px-0">
       <div style={{ textAlign: "center", marginBottom: "20px" }}>
         <Title>{t("visualGallery.title")}</Title>
       </div>

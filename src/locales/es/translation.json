@@ -1,36 +1,38 @@
 {
   "common": {
-    "companyName": "SmartLockers"
+    "companyName": "Locksmith LX",
+    "contactMe": "Contactame",
+    "phoneNumber": "+13001112233"
   },
   "hero": {
-    "title": "Tu cerrajero de confianza",
-    "highlight": "24/7",
-    "subtitle": "Servicio rápido y seguro en apertura de puertas, cambio de cerraduras y cerrajería automotriz. ¡Atendemos en minutos!",
+    "title": "Instalacion de cerraduras Recidenciales y Comerciales",
+    "list": {
+      "item1": "Cerrajeros con licencia y asegurados Cerca de ti",
+      "item2": "Tiempo de respuesta de emergencia de 20 minutos",
+      "item3": "Los cerrajeros mas rapidos y economicos de Los Angeles"
+    },
     "placeholder": "Tu número de contacto",
     "cta": "Llamar ahora"
   },
   "visualGallery": {
     "title": "Conoce nuestro trabajo"
   },
-  "services": {
-    "title": "Nuestros Servicios",
-    "description": "Conoce los servicios que ofrecemos para satisfacer tus necesidades de cerrajería:"
+  "servicesDigitalLocks": {
+    "title": "Chapas Digitales",
+    "description": "LocksmithLX ofrece los mejores servicios de cerrajería residencial en Los Ángeles y sus alrededores. Nuestro equipo profesional está listo para ayudarte con todas tus cerraduras inteligentes nuevas y existentes"
   },
-  "servicesList": {
+  "servicesListDigitalLocks": {
     "service1": {
-      "title": "Apertura de Puertas",
-      "description": "Abrimos puertas de casas, autos y oficinas sin daños, rápido y seguro.",
-      "alt": "Apertura de Puertas"
+      "title": "Abre con el celular",
+      "description": "Instalamos cerraduras inteligentes que puedes controlar desde tu teléfono móvil, brindándote comodidad y seguridad."
     },
     "service2": {
-      "title": "Cambio de Cerraduras",
-      "description": "Instalamos y reemplazamos cerraduras de alta seguridad para tu tranquilidad.",
-      "alt": "Cambio de Cerraduras"
+      "title": "Abre con tu huella",
+      "description": "Colocamos cerraduras biométricas de alta seguridad que se desbloquean con tu huella digital, evitando llaves físicas."
     },
     "service3": {
-      "title": "Urgencias 24/7",
-      "description": "Atención inmediata en casos de emergencia, cualquier día y hora.",
-      "alt": "Urgencias 24/7"
+      "title": "Abre con clave",
+      "description": "Integramos cerraduras electrónicas que se abren mediante un código numérico, práctico y seguro para hogares y oficinas."
     }
   },
   "map": {

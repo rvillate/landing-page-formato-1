@@ -1,38 +1,39 @@
 {
   "common": {
-    "companyName": "SmartLockers"
+    "companyName": "Locksmith LX",
+    "contactMe": "Contact me",
+    "phoneNumber": "+13001112233"
   },
   "hero": {
-    "title": "Your trusted locksmith",
-    "highlight": "24/7",
-    "subtitle": "Fast and secure service for door openings, lock changes, and automotive locksmithing. We arrive within minutes!",
-    "placeholder": "Your phone number",
+    "title": "Installation of Residentials and Commercials Locks",
+    "list": {
+      "item1": "Licenced and insured locksmiths Near you",
+      "item2": "20 Minutes emergency response time",
+      "item3": "Fastest Most Affordable Los Angeles Locksmiths"
+    },
     "cta": "Call now"
   },
   "visualGallery": {
     "title": "Get to know our work"
   },
-  "services": {
-    "title": "Our Services",
-    "description": "Discover the services we offer to meet your locksmith needs:"
+  "servicesDigitalLocks": {
+    "title": "Digital Locks",
+    "description": "LocksmithLX offers the very best residential locksmith services in Los Angeles and the surrounding areas. Our professional team is ready to assist you with all your new and existing smart locks:"
   },
-  "servicesList": {
-    "service1": {
-      "title": "Door Opening",
-      "description": "We open house, car, and office doors without damage, quickly and securely.",
-      "alt": "Door Opening"
-    },
-    "service2": {
-      "title": "Lock Change",
-      "description": "We install and replace high-security locks for your peace of mind.",
-      "alt": "Lock Change"
-    },
-    "service3": {
-      "title": "Emergencies 24/7",
-      "description": "Immediate attention in emergency cases, any day and time.",
-      "alt": "Emergencies 24/7"
-    }
+  "servicesListDigitalLocks": {
+  "service1": {
+    "title": "Unlock with your phone",
+    "description": "We install smart locks that you can control directly from your mobile device, offering both convenience and security."
   },
+  "service2": {
+    "title": "Unlock with your fingerprint",
+    "description": "We provide biometric locks that unlock with your fingerprint, eliminating the need for physical keys."
+  },
+  "service3": {
+    "title": "Unlock with a code",
+    "description": "We set up electronic locks that open with a numeric code, a practical and secure solution for homes and offices."
+  }
+},
   "map": {
     "title": "Locations of Interest"
   }

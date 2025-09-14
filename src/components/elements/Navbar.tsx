@@ -20,7 +20,7 @@ export const Navbar = () => {
       <Container>
         <nav className="w-full flex justify-between gap-6 relative">
           {/* Logo */}
-          <div className="min-w-max inline-flex relative">
+          <div className="min-w-max inline-flex relative mx-auto lg:mx-0">
             <a href="/" className="relative flex items-center gap-3">
               <img src={logo} alt="SmartLockers" className="w-10 h-10" />
               <div className="inline-flex text-lg font-semibold text-heading-1">
@@ -28,6 +28,7 @@ export const Navbar = () => {
               </div>
             </a>
           </div>
+
 
           <div
             className="flex flex-col lg:flex-row w-full lg:justify-between lg:items-center 
