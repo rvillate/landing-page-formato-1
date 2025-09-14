@@ -4,7 +4,7 @@ interface SubTitleProps {
 
 export const SubTitle = ({ children }: SubTitleProps) => {
   return (
-    <h1 className="text-heading-4 font-semibold text-1xl sm:text-2xl md:text-3xl">
+    <h1 className="text-heading-4 font-semibold text-0xl sm:text-1xl md:text-2xl">
       {" "}
       {children}{" "}
     </h1>

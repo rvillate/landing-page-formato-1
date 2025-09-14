@@ -4,6 +4,7 @@ import { Service } from "../cards/Service";
 import { Container } from "../shared/Container";
 import { Paragraph } from "../shared/Paragraph";
 import { Title } from "../shared/Title";
+import { SubTitle } from "../shared/SubTitle";
 
 export const ServicesTraditionalsLocks = () => {
   return (
@@ -12,6 +13,7 @@ export const ServicesTraditionalsLocks = () => {
       <Container className="space-y-10 md:space-y-12 mt-10">
         <div className="text-center max-w-3xl mx-auto space-y-4">
           <Title> {t("servicesTraditionalLocks.title")}</Title>
+          <SubTitle> {t("servicesDigitalLocks.subtitle")}</SubTitle>
           <Paragraph>
             {t("servicesTraditionalLocks.description")}
           </Paragraph>

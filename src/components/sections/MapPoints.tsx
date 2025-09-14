@@ -66,7 +66,7 @@ const highlightCenter: LatLngTuple = [40.7128, -74.006];
 
 export const MapPoints = () => {
   return (
-    <section className="relative">
+    <section className="relative mt-6">
       <div className="text-center mb-10">
         <Title>{t("map.title")}</Title>
       </div>
@@ -79,15 +79,29 @@ export const MapPoints = () => {
           >
             {/* Base layer */}
             <TileLayer
-              url="https://{s}.tile.openstreetmap.fr/hot/{z}/{x}/{y}.png"
+              url="https://mt1.google.com/vt/lyrs=r&x={x}&y={y}&z={z}" //{"Google Maps"}
+              // url="http://www.google.cn/maps/vt?lyrs=s@189&gl=cn&x={x}&y={y}&z={z}" //{"Google Satellite"}
+              // url="https://mt1.google.com/vt/lyrs=y&x={x}&y={y}&z={z}" //{"Google Hybrid"}
+              // url="https://mt1.google.com/vt/lyrs=t&x={x}&y={y}&z={z}" //{"Google Terrain"}
+              // url="https://mt1.google.com/vt?lyrs=h@159000000,traffic|seconds_into_week:-1&style=3&x={x}&y={y}&z={z}" //{"Google Traffic"}
+              // url="https://mt1.google.com/vt/lyrs=h&x={x}&y={y}&z={z}" //{"Google Roads"}
+              
+              // url="https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}" //ESRI Imagery/Satellite
+              // url="http://services.arcgisonline.com/ArcGIS/rest/services/NatGeo_World_Map/MapServer/tile/{z}/{y}/{x}" //ESRI National Geographic
+              //NO DISPONIBLE url="https://server.arcgisonline.com/ArcGIS/rest/services/World_Physical_Map/MapServer/tile/{z}/{y}/{x}" //ESRI Physical
+              // url="https://server.arcgisonline.com/ArcGIS/rest/services/World_Street_Map/MapServer/tile/{z}/{y}/{x}" //ESRI Streets
+              // url="https://server.arcgisonline.com/ArcGIS/rest/services/World_Terrain_Base/MapServer/tile/{z}/{y}/{x}" //ESRI Terrain
+              // url="https://server.arcgisonline.com/ArcGIS/rest/services/World_Topo_Map/MapServer/tile/{z}/{y}/{x}" //ESRI Topo
+              // url="https://server.arcgisonline.com/ArcGIS/rest/services/Reference/World_Transportation/MapServer/tile/{z}/{y}/{x}" //ESRI Transportation
+
               attribution='&copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a>'
             />
 
             {/* Área de cobertura */}
-            <Polygon positions={coverageArea} color="blue" />
+            <Polygon positions={coverageArea} color="#5472FF" />
 
             {/* Círculo de resalte */}
-            <Circle center={highlightCenter} radius={30000} color="red" />
+            {/* <Circle center={highlightCenter} radius={30000} color="red" /> */}
 
             {/* Marcadores dinámicos */}
             {points.map((p) => (

@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { FaWhatsapp } from "react-icons/fa";
 import { Paragraph } from "../shared/Paragraph";
 import { t } from "i18next";
+import CtaButton from "../gadgets/ctaButton";
 
 interface ServiceProps {
   title: string;
@@ -58,7 +59,7 @@ export const Service = ({ title, description, images, alt }: ServiceProps) => {
 
   {/* Botón WhatsApp */}
   <div className="flex items-center gap-3 absolute left-5 bottom-5">
-    <a
+    {/* <a
       href={`https://wa.me/${t("common.phoneNumber")}`}
       target="_blank"
       rel="noopener noreferrer"
@@ -70,9 +71,13 @@ export const Service = ({ title, description, images, alt }: ServiceProps) => {
     </a>
     <a href={`https://wa.me/${t("common.phoneNumber")}`}>
       <span className="ml-2 text-lg md:text-xl font-semibold text-green-700">
-        {t("common.phoneNumber")}
+        {t("common.contactMe")}
       </span>
-    </a>
+    </a> */}
+
+    <div className="flex justify-center">
+                  <CtaButton />
+                </div>
   </div>
 </div>
 

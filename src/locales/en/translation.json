@@ -1,8 +1,8 @@
 {
   "common": {
     "companyName": "Locksmith LX",
-    "contactMe": "Contact me",
-    "phoneNumber": "+13001112233"
+    "contactMe": "Contact us",
+    "phoneNumber": "13001112233"
   },
   "hero": {
     "title": "Installation of Residentials and Commercials Locks",
@@ -37,6 +37,7 @@
 },
   "servicesTraditionalLocks": {
     "title": "Traditional Locks",
+    "subtitle": "Commercial and Residential",
     "description": "LocksmithLX offers the very best residential locksmith services in Los Angeles and the surrounding areas. Our professional team is ready to assist you with all your new and existing traditional locks:"
   },
   "servicesListTraditionalLocks": {

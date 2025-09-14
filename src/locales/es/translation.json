@@ -1,8 +1,8 @@
 {
   "common": {
     "companyName": "Locksmith LX",
-    "contactMe": "Contactame",
-    "phoneNumber": "+13001112233"
+    "contactMe": "Contactanos ahora",
+    "phoneNumber": "13001112233"
   },
   "hero": {
     "title": "Instalacion de cerraduras Recidenciales y Comerciales",
@@ -38,6 +38,7 @@
   },
   "servicesTraditionalLocks": {
     "title": "Chapas Tradicionales",
+    "subtitle": "Comercial y Residencial",
     "description": "LocksmithLX ofrece los mejores servicios de cerrajería residencial en Los Ángeles y sus alrededores. Nuestro equipo profesional está listo para ayudarte con todas tus cerraduras tradicionales nuevas y existentes"
   },
   "servicesListTraditionalLocks": {
