@@ -5,7 +5,7 @@ export const serviceImages = {
   withCode: import.meta.glob("/assets/images/services/withCode/*.{png,jpg,jpeg,webp}", { eager: true }),
 };
 
-export const services = [
+export const servicesDigitalLocks = [
   {
     title: "servicesListDigitalLocks.service1.title",
     description: "servicesListDigitalLocks.service1.description",

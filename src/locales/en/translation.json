@@ -18,6 +18,7 @@
   },
   "servicesDigitalLocks": {
     "title": "Digital Locks",
+    "subtitle": "Commercial and Residential",
     "description": "LocksmithLX offers the very best residential locksmith services in Los Angeles and the surrounding areas. Our professional team is ready to assist you with all your new and existing smart locks:"
   },
   "servicesListDigitalLocks": {
@@ -34,6 +35,20 @@
     "description": "We set up electronic locks that open with a numeric code, a practical and secure solution for homes and offices."
   }
 },
+  "servicesTraditionalLocks": {
+    "title": "Traditional Locks",
+    "description": "LocksmithLX offers the very best residential locksmith services in Los Angeles and the surrounding areas. Our professional team is ready to assist you with all your new and existing traditional locks:"
+  },
+  "servicesListTraditionalLocks": {
+    "service1": {
+      "title": "Lever Handle",
+      "description": "We install high-security locks with lever handles that provide reliable protection for your home or business."
+    },
+    "service2": {
+      "title": "Knob",
+      "description": "We install high-security locks with knobs that offer a practical and secure solution for your entry."
+    }
+  },
   "map": {
     "title": "Locations of Interest"
   }

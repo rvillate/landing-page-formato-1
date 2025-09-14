@@ -19,6 +19,7 @@
   },
   "servicesDigitalLocks": {
     "title": "Chapas Digitales",
+    "subtitle": "Comercial y Residencial",
     "description": "LocksmithLX ofrece los mejores servicios de cerrajería residencial en Los Ángeles y sus alrededores. Nuestro equipo profesional está listo para ayudarte con todas tus cerraduras inteligentes nuevas y existentes"
   },
   "servicesListDigitalLocks": {
@@ -35,6 +36,21 @@
       "description": "Integramos cerraduras electrónicas que se abren mediante un código numérico, práctico y seguro para hogares y oficinas."
     }
   },
+  "servicesTraditionalLocks": {
+    "title": "Chapas Tradicionales",
+    "description": "LocksmithLX ofrece los mejores servicios de cerrajería residencial en Los Ángeles y sus alrededores. Nuestro equipo profesional está listo para ayudarte con todas tus cerraduras tradicionales nuevas y existentes"
+  },
+  "servicesListTraditionalLocks": {
+    "service1": {
+      "title": "Manija",
+      "description": "Instalamos cerraduras de alta seguridad con manija que proporcionan una protección confiable para tu hogar o negocio."
+    },
+    "service2": {
+      "title": "Perilla",
+      "description": "Colocamos cerraduras de alta seguridad con perilla que ofrecen una solución práctica y segura para tu entrada."
+    }
+  },
+
   "map": {
     "title": "Ubicaciones de Interés"
   }

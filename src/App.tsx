@@ -5,7 +5,8 @@ import { Brands } from "./components/sections/Brands";
 import { CTA } from "./components/sections/CallToAction";
 import { Hero } from "./components/sections/Hero";
 import { Pricing } from "./components/sections/Pricing";
-import { Services } from "./components/sections/Services";
+import { ServicesDigitalLocks } from "./components/sections/ServicesDigitalLocks";
+import { ServicesTraditionalsLocks } from "./components/sections/ServicesTraditionalsLocks";
 import { Trust } from "./components/sections/Trust";
 import { PromotionsUrgency } from "./components/sections/PromotionsUrgency";
 import { VisualGallery } from "./components/sections/VisualGallery";
@@ -16,7 +17,8 @@ function App() {
     <Layout title="EdgeAI">
       <Hero />
       {/* <Numbers /> */}
-      <Services />
+      <ServicesDigitalLocks />
+      <ServicesTraditionalsLocks />
       {/* <Trust/> */}
       {/* <PromotionsUrgency/> */}
       <VisualGallery/>
