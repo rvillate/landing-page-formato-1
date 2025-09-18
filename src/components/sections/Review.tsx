@@ -3,6 +3,7 @@ import { Container } from "../shared/Container";
 import { Title } from "../shared/Title";
 import { FaStar, FaRegStar, FaGem } from "react-icons/fa";
 import { useTranslation } from "react-i18next";
+import CtaButtonBlue from "../gadgets/ctaButtonBlue";
 
 type Review = {
   name: string;
@@ -171,6 +172,9 @@ export const ReviewsCarousel = () => {
             ›
           </button>
         </div>
+        <div className="flex justify-center">
+                  <CtaButtonBlue />
+                </div>
       </Container>
     </section>
   );

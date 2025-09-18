@@ -3,6 +3,7 @@ import { FaWhatsapp } from "react-icons/fa";
 import { Paragraph } from "../shared/Paragraph";
 import { t } from "i18next";
 import CtaButton from "../gadgets/ctaButton";
+import CtaButtonBlue from "../gadgets/ctaButtonBlue";
 
 interface ServiceProps {
   title: string;
@@ -25,7 +26,7 @@ export const Service = ({ title, description, images, alt }: ServiceProps) => {
     <div
   className="group relative p-5 sm:p-6 lg:p-8 rounded-3xl border border-box-border bg-box-bg shadow-lg
              shadow-box-shadow overflow-hidden transition duration-500 ease-in-out transform
-             hover:scale-105 hover:-translate-y-2 hover:shadow-2xl"
+             hover:scale-105 hover:-translate-y-2 hover:shadow-2xl "
 >
   {/* Contenedor de la imagen con efecto */}
   <div className="relative flex items-center justify-center w-full h-48">
@@ -75,8 +76,8 @@ export const Service = ({ title, description, images, alt }: ServiceProps) => {
       </span>
     </a> */}
 
-    <div className="flex justify-center mt-8">
-                  <CtaButton />
+    <div className="flex justify-center mt-8 ">
+                  <CtaButtonBlue />
                 </div>
   </div>
 </div>

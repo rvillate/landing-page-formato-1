@@ -5,6 +5,7 @@ import { BtnLink } from "../shared/BtnLink";
 import { useThemeStore } from "../../store/ThemeStore";
 import { t } from "i18next";
 import CtaButton from "../gadgets/ctaButton";
+import CtaButtonBlue from "../gadgets/ctaButtonBlue";
 
 export const navItems = [
   { href: "#", text: "Home" },
@@ -51,7 +52,7 @@ export const Navbar = () => {
                             lg:pb-0 border-b border-box-border lg:border-0
                             px-6 lg:px-0"
             >
-                            <CtaButton />
+                            <CtaButtonBlue />
             </div>
           </div>
 

@@ -8,7 +8,7 @@ import { SubTitle } from "../shared/SubTitle";
 
 export const ServicesTraditionalsLocks = () => {
   return (
-    <section id="services-traditional-locks">
+    <section id="services-traditional-locks" >
       {" "}
       <Container className="space-y-10 md:space-y-12 mt-10">
         <div className="text-center max-w-3xl mx-auto space-y-4">

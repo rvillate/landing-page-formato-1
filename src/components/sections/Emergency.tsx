@@ -3,6 +3,7 @@ import { Container } from "../shared/Container";
 import { Paragraph } from "../shared/Paragraph";
 import { Title } from "../shared/Title";
 import CtaButton from "../gadgets/ctaButton";
+import CtaButtonBlue from "../gadgets/ctaButtonBlue";
 
 export const Emergency = () => {
   return (
@@ -19,7 +20,7 @@ export const Emergency = () => {
           <div className="text-center md:text-right">
             <h2 className="text-heading-1 text-5xl font-bold text-black-600 text-center">{t("emergency.recurrency")}</h2>
             <div className="flex justify-center mt-8">
-              <CtaButton />
+              <CtaButtonBlue />
             </div>
           </div>
 

@@ -2,10 +2,10 @@ import { FaWhatsapp } from "react-icons/fa";
 import { Button } from "../shared/Button";
 import { t } from "i18next";
 
-export const CtaButton = () => (
+export const CtaButtonBlue = () => (
   <div className="flex justify-center lg:justify-start">
     <Button
-      className=" bg-green-500 hover:bg-yellow-500 text-white inline-flex items-center gap-3 px-6 py-3 rounded-full shadow-lg transition-all duration-300 w-auto h-auto"
+      className=" bg-blue-500 hover:bg-yellow-600 text-white inline-flex items-center gap-3 px-6 py-3 rounded-full shadow-lg transition-all duration-300 w-auto h-auto"
 
       as="a"
       href={`https://wa.me/+${t("common.phoneNumber")}`}
@@ -18,4 +18,4 @@ export const CtaButton = () => (
   </div>
 );
 
-export default CtaButton;
+export default CtaButtonBlue;

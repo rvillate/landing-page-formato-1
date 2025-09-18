@@ -1,72 +1,76 @@
-import { Button } from "../shared/Button";
-import { Container } from "../shared/Container";
-import { Paragraph } from "../shared/Paragraph";
 import { useTranslation } from "react-i18next";
-
-import heroImg from "/assets/images/hero/image1.webp";
 import listVerification from "/assets/images/hero/list-verification.svg";
+import hero1 from "/assets/images/hero/hero1.png";
+import hero2 from "/assets/images/hero/image1.webp";
+import hero3 from "/assets/images/hero/hero3.png";
 import CtaButton from "../gadgets/ctaButton";
+import { Container } from "../shared/Container";
 
 export const Hero = () => {
   const { t } = useTranslation();
 
   return (
-    <section id="hero" className="relative pt-20 lg:pt-30">
-      <Container className="flex flex-col lg:flex-row gap-0 lg:gap-12 pb-0 lg:pb-0">
-        {/* Fondos decorativos */}
-        <div className="absolute w-full lg:w-1/2 inset-y-0 lg:right-0">
-          <span
-            className="absolute -left-6 md:left-4 top-24 lg:top-28 w-24 h-24 rotate-90 
-                        skew-x-12 rounded-3xl bg-gradient-to-r from-blue-600 to-violet-600
-                        blur-xl opacity-60 lg:opacity-95 lg:block hidden"
-          ></span>
-          <span className="absolute right-4 bottom-12 w-24 h-24 rounded-3xl bg-primary blur-xl opacity-80"></span>
-        </div>
-
-        {/* Texto principal */}
-        <div
-          className="relative flex flex-col items-center text-center lg:text-left lg:py-8 lg:items-start
-                        lg:max-w-none max-w-3xl mx-auto lg:mx-0 lg:flex-1 lg:w-1/2"
-        >
-          <h1 className="text-heading-1 text-3xl sm:text-4xl md:text-5xl xl:text-6x6 font-bold">
-            {t("hero.title")}
-            {/* <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-violet-600 ml-2">
-              {t("hero.highlight")}
-            </span> */}
-          </h1>
-
-          <ul>
-            {Object.values(t("hero.list", { returnObjects: true })).map((item, index) => (
-              <li key={index} className="text-lg text-heading-2 mt-4 flex items-start text-left">
-                <span className="mr-2 mt-1">
-                  {/* SVG icono de viñeta */}
-                  <img width={20} src={listVerification} alt="" />
-                </span>
-                {item}
-              </li>
-            ))}
-          </ul>
-
-<div className="flex justify-center mt-8">
-  <CtaButton />
+    <section id="hero" className="relative w-full min-h-[80vh] pt-20">
+      <div className="flex flex-col lg:flex-row h-full relative">
+        
+        {/* Lado izquierdo: imagen (sobremontada sobre azul) */}
+        {/* <div className="h-[500px] w-full lg:w-1/2 flex items-center justify-center bg-white relative z-20">
+          <img
+            src={hero1}
+            alt="Hero team"
+            className="w-full h-full object-cover"
+            style={{ objectPosition: "50% 30%" }} 
+          />
+        </div> */}
+        {/* <div className="h-[500px] w-full lg:w-1/2 flex items-center justify-center bg-white relative z-20">
+          <img
+            src={hero2}
+            alt="Hero team"
+            className="w-full h-full object-cover"
+            style={{ objectPosition: "70% 10%" }} 
+          />
+        </div> */}
+<div className="static h-[500px] w-full lg:w-1/2 overflow-hidden bg-transparent z-20">
+  <img
+    src={hero3}
+    alt="Hero team"
+    className="w-[140%] h-full object-cover"
+  />
 </div>
 
+        {/* Lado derecho: bloque azul con diagonal */}
+        <div
+          className="
+            w-full lg:w-1/2 bg-blue-500 text-white flex flex-col justify-center 
+            px-8 lg:px-16 relative z-10
+            [clip-path:polygon(0%_0,100%_0,100%_100%,0_100%)]
+            md:[clip-path:polygon(0%_0,100%_0,100%_100%,0_100%)]
+            lg:[clip-path:polygon(5%_0,100%_0,100%_100%,0_100%)]
+          "
+        >
+          <Container className="relative z-20">
+            <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-6 leading-tight">
+              {t("hero.title")}
+            </h1>
 
+            <ul>
+              {Object.values(t("hero.list", { returnObjects: true })).map((item, index) => (
+                <li
+                  key={index}
+                  className="text-lg mt-3 flex items-start"
+                >
+                  <img width={20} src={listVerification} alt="" className="mr-2 mt-1" />
+                  {item}
+                </li>
+              ))}
+            </ul>
+
+            <div className="mt-8 mb-2">
+              <CtaButton />
+            </div>
+          </Container>
         </div>
-
-
-        {/* Imagen hero */}
-        <div className="flex flex-1 lg:w-1/2 lg:h-auto relative lg:max-w-non lg:mx-0 mx-auto max-w-3xl">
-          <img
-            src={heroImg}
-            alt="Hero image"
-            width={2350}
-            height={2359}
-            className="lg:absolute lg:w-full lg:h-full rounded-3xl object-cover lg:max-h-non max-h-96"
-            style={{ objectPosition: "50% 30%" }}
-          />
-        </div>
-      </Container>
+      </div>
     </section>
   );
 };

@@ -10,6 +10,7 @@ import { Title } from "../shared/Title";
 import { t } from "i18next";
 import { GeoJSON } from "react-leaflet";
 import laBoundary from "../../../assets/geojson/LosAngeles.geojson";
+import CtaButtonBlue from "../gadgets/ctaButtonBlue";
 
 
 // --- Íconos personalizados ---
@@ -143,6 +144,9 @@ export const MapPoints = () => {
             ))}
           </MapContainer>
         </div>
+        <div className="flex justify-center pt-5">
+                  <CtaButtonBlue />
+                </div>
       </Container>
     </section>
   );
