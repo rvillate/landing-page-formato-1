@@ -4,12 +4,14 @@ import { NavItem } from "../shared/NavItem";
 import { BtnLink } from "../shared/BtnLink";
 import { useThemeStore } from "../../store/ThemeStore";
 import { t } from "i18next";
+import CtaButton from "../gadgets/ctaButton";
 
 export const navItems = [
   { href: "#", text: "Home" },
-  { href: "#services", text: "Services" },
-  { href: "#about-us", text: "About Us" },
-  { href: "#pricing", text: "Pricing" },
+  { href: "#service-digital-locks", text: "Services" },
+  { href: "#emergency", text: "Emergency" },
+  { href: "#warranty", text: "Warranty" },
+  { href: "#map-points", text: "Map" },
 ];
 
 export const Navbar = () => {
@@ -49,13 +51,7 @@ export const Navbar = () => {
                             lg:pb-0 border-b border-box-border lg:border-0
                             px-6 lg:px-0"
             >
-              <BtnLink
-                text="Get Started"
-                href="#cta"
-                className={
-                  theme === "dark" ? "text-white" : "text-black"
-                }
-              />
+                            <CtaButton />
             </div>
           </div>
 

@@ -8,6 +8,9 @@ import L from "leaflet";
 import "leaflet.markercluster";
 import { Title } from "../shared/Title";
 import { t } from "i18next";
+import { GeoJSON } from "react-leaflet";
+import laBoundary from "../../../assets/geojson/LosAngeles.geojson";
+
 
 // --- Íconos personalizados ---
 const officeIcon = new Icon({
@@ -66,7 +69,7 @@ const highlightCenter: LatLngTuple = [40.7128, -74.006];
 
 export const MapPoints = () => {
   return (
-    <section className="relative mt-6">
+    <section id="map-points" className="relative mt-6">
       <div className="text-center mb-10">
         <Title>{t("map.title")}</Title>
       </div>
@@ -99,6 +102,9 @@ export const MapPoints = () => {
 
             {/* Área de cobertura */}
             <Polygon positions={coverageArea} color="#5472FF" />
+
+
+
 
             {/* Círculo de resalte */}
             {/* <Circle center={highlightCenter} radius={30000} color="red" /> */}

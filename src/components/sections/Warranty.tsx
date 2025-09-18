@@ -1,3 +1,4 @@
+import { t } from "i18next";
 import { Info } from "../cards/Info";
 import { Container } from "../shared/Container";
 import { Paragraph } from "../shared/Paragraph";
@@ -9,7 +10,7 @@ export const Warranty = () => {
       <Container className="space-y-10">
         {/* Título centrado */}
         <div className="text-center">
-          <Title>Garantía</Title>
+          <Title>{t("warranty.title")}</Title>
         </div>
 
         {/* Dos columnas de información */}
@@ -17,8 +18,8 @@ export const Warranty = () => {
           <div className="shadow-box-shadow overflow-hidden transition duration-200 ease-in-out transform
              hover:scale-101 hover:-translate-y-1 hover:shadow-2xl">
 <Info
-            title="Cobertura 12 meses"
-            description="Todas nuestras cerraduras y servicios cuentan con una garantía de 12 meses que cubre defectos de fabricación y funcionamiento."
+            title={t("warranty.info1.title")}
+            description={t("warranty.info1.description")}
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -41,8 +42,8 @@ export const Warranty = () => {
           <div className="shadow-box-shadow overflow-hidden transition duration-200 ease-in-out transform
              hover:scale-101 hover:-translate-y-1 hover:shadow-2xl">
           <Info
-            title="Soporte continuo"
-            description="Nuestro equipo técnico está disponible para atender cualquier problema o duda durante todo el periodo de garantía, con atención prioritaria."
+            title={t("warranty.info2.title")}
+            description={t("warranty.info2.description")}
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"

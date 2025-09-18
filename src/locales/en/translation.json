@@ -2,7 +2,7 @@
   "common": {
     "companyName": "Locksmith LX",
     "contactMe": "Contact us",
-    "phoneNumber": "13001112233"
+    "phoneNumber": "14245087835"
   },
   "hero": {
     "title": "Installation of Residentials and Commercials Locks",
@@ -22,19 +22,19 @@
     "description": "LocksmithLX offers the very best residential locksmith services in Los Angeles and the surrounding areas. Our professional team is ready to assist you with all your new and existing smart locks:"
   },
   "servicesListDigitalLocks": {
-  "service1": {
-    "title": "Unlock with your phone",
-    "description": "We install smart locks that you can control directly from your mobile device, offering both convenience and security."
+    "service1": {
+      "title": "Unlock with your phone",
+      "description": "We install smart locks that you can control directly from your mobile device, offering both convenience and security."
+    },
+    "service2": {
+      "title": "Unlock with your fingerprint",
+      "description": "We provide biometric locks that unlock with your fingerprint, eliminating the need for physical keys."
+    },
+    "service3": {
+      "title": "Unlock with a code",
+      "description": "We set up electronic locks that open with a numeric code, a practical and secure solution for homes and offices."
+    }
   },
-  "service2": {
-    "title": "Unlock with your fingerprint",
-    "description": "We provide biometric locks that unlock with your fingerprint, eliminating the need for physical keys."
-  },
-  "service3": {
-    "title": "Unlock with a code",
-    "description": "We set up electronic locks that open with a numeric code, a practical and secure solution for homes and offices."
-  }
-},
   "servicesTraditionalLocks": {
     "title": "Traditional Locks",
     "subtitle": "Commercial and Residential",
@@ -52,5 +52,84 @@
   },
   "map": {
     "title": "Locations of Interest"
+  },
+  "emergency": {
+    "title": "Emergency",
+    "recurrency": "24x7",
+    "description": "Emergency locksmith service available 24 hours a day, 7 days a week. Call us for immediate assistance."
+  },
+  "warranty": {
+    "title": "Warranty",
+    "info1": {
+      "title": "12-Month Coverage",
+      "description": "We offer a 12-month coverage on all our locksmith services, ensuring your peace of mind and satisfaction."
+    },
+    "info2": {
+      "title": "Continuous Support",
+      "description": "Continuous support for any inquiries or issues related to our services."
+    }
+  },
+  "reviews": {
+    "title": "What our customers say",
+    "reviewsList": {
+      "review1": {
+        "id": 1,
+        "name": "John D.",
+        "photo": "https://randomuser.me/api/portraits/men/1.jpg",
+        "rating": 5,
+        "comment": "LocksmithLX provided exceptional service when I needed a new smart lock installed. The technician was professional and efficient. Highly recommend!"
+      },
+      "review2": {
+        "id": 2,
+        "name": "Sarah K.",
+        "photo": "https://randomuser.me/api/portraits/women/2.jpg",
+        "rating": 4,
+        "comment": "Great experience with LocksmithLX. They were quick to respond and installed a high-security lock on my front door. Very satisfied with their work."
+      },
+      "review3": {
+        "id": 3,
+        "name": "Mike T.",
+        "photo": "https://randomuser.me/api/portraits/men/3.jpg",
+        "rating": 5,
+        "comment": "I had an emergency lockout situation, and LocksmithLX came to my rescue within 20 minutes. The locksmith was friendly and got me back inside quickly."
+      },
+      "review4": {
+        "id": 4,
+        "name": "Emily R.",
+        "photo": "https://randomuser.me/api/portraits/women/4.jpg",
+        "rating": 5,
+        "comment": "The team at LocksmithLX is top-notch. They installed a biometric lock for my office, and it works flawlessly. Excellent customer service!"
+      },
+      "review5": {
+        "id": 5,
+        "name": "David S.",
+        "photo": "https://randomuser.me/api/portraits/men/5.jpg",
+        "rating": 4,
+        "comment": "Professional and reliable service from LocksmithLX. They replaced my old locks with new, high-security ones. I feel much safer now."
+      }
+    }
+  },
+  "footer": {
+    "menu": {
+      "digitalLocks": "Digital locks",
+      "traditionalLocks": "Traditional locks",
+      "emergency": "Emergency",
+      "automobiles": "Automobiles",
+      "aboutUs": "About us",
+      "contact": "Contact"
+    },
+    "contact": {
+      "title": "Contact",
+      "phone": "Phone",
+      "email": "Email",
+      "warranty": "Warranty",
+      "privacyPolicy": "Privacy policy"
+    },
+    "social": {
+      "title": "Social media",
+      "tiktok": "TikTok",
+      "facebook": "Facebook",
+      "instagram": "Instagram"
+    }
   }
 }

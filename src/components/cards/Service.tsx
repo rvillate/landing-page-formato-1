@@ -75,7 +75,7 @@ export const Service = ({ title, description, images, alt }: ServiceProps) => {
       </span>
     </a> */}
 
-    <div className="flex justify-center">
+    <div className="flex justify-center mt-8">
                   <CtaButton />
                 </div>
   </div>

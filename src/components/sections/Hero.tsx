@@ -11,7 +11,7 @@ export const Hero = () => {
   const { t } = useTranslation();
 
   return (
-    <section className="relative pt-20 lg:pt-30">
+    <section id="hero" className="relative pt-20 lg:pt-30">
       <Container className="flex flex-col lg:flex-row gap-0 lg:gap-12 pb-0 lg:pb-0">
         {/* Fondos decorativos */}
         <div className="absolute w-full lg:w-1/2 inset-y-0 lg:right-0">
@@ -47,7 +47,7 @@ export const Hero = () => {
             ))}
           </ul>
 
-<div className="flex justify-center">
+<div className="flex justify-center mt-8">
   <CtaButton />
 </div>
 

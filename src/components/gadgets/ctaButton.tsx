@@ -3,7 +3,7 @@ import { Button } from "../shared/Button";
 import { t } from "i18next";
 
 export const CtaButton = () => (
-  <div className="flex justify-center lg:justify-start mt-8">
+  <div className="flex justify-center lg:justify-start">
     <Button
       className="bg-green-500 hover:bg-yellow-500 text-white inline-flex items-center gap-3 px-6 py-3 rounded-full shadow-lg transition-all duration-300 w-auto h-auto"
 

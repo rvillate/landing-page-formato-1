@@ -2,7 +2,7 @@
   "common": {
     "companyName": "Locksmith LX",
     "contactMe": "Contactanos ahora",
-    "phoneNumber": "13001112233"
+    "phoneNumber": "14245087835"
   },
   "hero": {
     "title": "Instalacion de cerraduras Recidenciales y Comerciales",
@@ -51,8 +51,86 @@
       "description": "Colocamos cerraduras de alta seguridad con perilla que ofrecen una solución práctica y segura para tu entrada."
     }
   },
-
   "map": {
     "title": "Ubicaciones de Interés"
+  },
+  "emergency": {
+    "title": "Emergencia",
+    "recurrency": "24x7",
+    "description": "Servicio de cerrajería de emergencia disponible las 24 horas del día, los 7 días de la semana. Llámanos para asistencia inmediata."
+  },
+  "warranty": {
+    "title": "Garantía",
+    "info1": {
+      "title": "Cobertura 12 meses",
+      "description": "Ofrecemos una cobertura de 12 meses en todos nuestros servicios de cerrajería."
+    },
+    "info2": {
+      "title": "Soporte continuo",
+      "description": "Soporte continuo para cualquier consulta o problema relacionado con nuestros servicios."
+    }
+  },
+  "reviews": {
+    "title": "Lo que dicen nuestros clientes",
+    "reviewsList": {
+      "review1": {
+        "id": 1,
+        "name": "John D.",
+        "photo": "https://randomuser.me/api/portraits/men/1.jpg",
+        "rating": 5,
+        "comment": "LocksmithLX proporcionó un servicio excepcional cuando necesitaba instalar una nueva cerradura inteligente. El técnico fue profesional y eficiente. ¡Lo recomiendo mucho!"
+      },
+      "review2": {
+        "id": 2,
+        "name": "Sarah K.",
+        "photo": "https://randomuser.me/api/portraits/women/2.jpg",
+        "rating": 4,
+        "comment": "Gran experiencia con LocksmithLX. Fueron rápidos en responder e instalaron una cerradura de alta seguridad en mi puerta principal. Muy satisfecha con su trabajo."
+      },
+      "review3": {
+        "id": 3,
+        "name": "Mike T.",
+        "photo": "https://randomuser.me/api/portraits/men/3.jpg",
+        "rating": 5,
+        "comment": "Tuve una situación de bloqueo de emergencia, y LocksmithLX vino a mi rescate en 20 minutos. El cerrajero fue amable y me hizo entrar rápidamente."
+      },
+      "review4": {
+        "id": 4,
+        "name": "Emily R.",
+        "photo": "https://randomuser.me/api/portraits/women/4.jpg",
+        "rating": 5,
+        "comment": "El equipo de LocksmithLX es excepcional. Instalaron una cerradura biométrica para mi oficina y funciona a la perfección. ¡Excelente servicio al cliente!"
+      },
+      "review5": {
+        "id": 5,
+        "name": "David S.",
+        "photo": "https://randomuser.me/api/portraits/men/5.jpg",
+        "rating": 4,
+        "comment": "Servicio profesional y confiable de LocksmithLX. Reemplazaron mis viejas cerraduras por nuevas y de alta seguridad. Ahora me siento mucho más seguro."
+      }
+    }
+  },
+  "footer": {
+    "menu": {
+      "digitalLocks": "Chapas digitales",
+      "traditionalLocks": "Chapas tradicionales",
+      "emergency": "Emergencia",
+      "automobiles": "Automóviles",
+      "aboutUs": "Nosotros",
+      "contact": "Contacto"
+    },
+    "contact": {
+      "title": "Contacto",
+      "phone": "celular",
+      "email": "correo",
+      "warranty": "Garantía",
+      "privacyPolicy": "Privacy policy"
+    },
+    "social": {
+      "title": "Redes sociales",
+      "tiktok": "tiktok",
+      "facebook": "facebook",
+      "instagram": "instagram"
+    }
   }
 }

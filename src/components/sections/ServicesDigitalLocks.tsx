@@ -8,7 +8,7 @@ import { SubTitle } from "../shared/SubTitle.tsx";
 
 export const ServicesDigitalLocks = () => {
   return (
-    <section id="services-digital-locks">
+    <section id="service-digital-locks">
       {" "}
       <Container className="space-y-10 md:space-y-12">
         <div className="text-center max-w-3xl mx-auto space-y-4">
