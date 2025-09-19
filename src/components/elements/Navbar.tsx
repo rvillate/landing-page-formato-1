@@ -8,12 +8,13 @@ import CtaButton from "../gadgets/ctaButton";
 import CtaButtonBlue from "../gadgets/ctaButtonBlue";
 
 export const navItems = [
-  { href: "#", text: "Home" },
-  { href: "#service-digital-locks", text: "Services" },
-  { href: "#emergency", text: "Emergency" },
-  { href: "#warranty", text: "Warranty" },
-  { href: "#map-points", text: "Map" },
+  { href: "#", key: "nav.home" },
+  { href: "#service-digital-locks", key: "nav.services" },
+  { href: "#emergency", key: "nav.emergency" },
+  { href: "#warranty", key: "nav.warranty" },
+  { href: "#map-points", key: "nav.map" },
 ];
+
 
 export const Navbar = () => {
   const { toggleTheme, theme } = useThemeStore();
@@ -44,7 +45,7 @@ export const Navbar = () => {
                            text-lg text-heading-2 w-full lg:justify-center lg:items-center"
             >
               {navItems.map((item, key) => (
-                <NavItem href={item.href} text={item.text} key={key} />
+                <NavItem href={item.href} text={t(item.key)} key={key} />
               ))}
             </ul>
             <div

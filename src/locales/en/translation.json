@@ -4,6 +4,13 @@
     "contactMe": "Contact us",
     "phoneNumber": "14245087835"
   },
+  "nav": {
+    "home": "Home",
+    "services": "Services",
+    "emergency": "Emergency",
+    "warranty": "Warranty",
+    "map": "Map"
+  },
   "hero": {
     "title": "Installation of Residentials and Commercials Locks",
     "list": {

@@ -19,7 +19,7 @@ export const ReviewsCarousel = () => {
   const reviewsObj = t("reviews.reviewsList", { returnObjects: true }) as Record<string, Review>;
   const reviews: Review[] = Object.values(reviewsObj);
 
-  const visibleCards = 3;
+  const visibleCards = 4;
 
   // duplicamos: [ ...ultimos, ...original, ...primeros ]
   const extendedReviews = [
@@ -104,7 +104,7 @@ export const ReviewsCarousel = () => {
   };
 
   return (
-    <section id="reviews" className="py-16 bg-box-bg select-none cursor-grab">
+    <section id="reviews" className="py-16 select-none cursor-grab">
       <Container>
         <div style={{ textAlign: "center", marginBottom: "20px" }}>
           <Title>{t("reviews.title")}</Title>
@@ -172,7 +172,7 @@ export const ReviewsCarousel = () => {
             ›
           </button>
         </div>
-        <div className="flex justify-center">
+        <div className="flex justify-center pt-5">
                   <CtaButtonBlue />
                 </div>
       </Container>

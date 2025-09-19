@@ -9,6 +9,7 @@
   --heading-2: 31 41 55;
   --heading-3: 55 65 81;
   --heading-4: 70 72 97;
+  --bg-color-hero: 21 93 252;
 }
 
 .dark {
@@ -20,7 +21,7 @@
   --heading-2: 243 244 246;
   --heading-3: 209 213 219;
   --heading-4: 190 191 194;
-  
+  --bg-color-hero: 0 0 0;
 }
 
 @layer utilities {
@@ -41,6 +42,9 @@
   }
   .text-heading-4 {
     color: rgb(var(--heading-4));
+  }
+  .bg-color-hero {
+    background-color: rgb(var(--bg-color-hero));
   }
 }
 

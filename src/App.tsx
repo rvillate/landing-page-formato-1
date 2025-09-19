@@ -14,7 +14,7 @@ function App() {
   return (
     <Layout title="LocksmithLX - Locksmith Services in Los Angeles">
       <Hero />
-      <Bar/>
+      {/* <Bar/> */}
       {/* <Numbers /> */}
       <ServicesDigitalLocks />
       <ServicesTraditionalsLocks />

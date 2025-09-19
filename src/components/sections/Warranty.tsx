@@ -1,7 +1,6 @@
 import { t } from "i18next";
 import { Info } from "../cards/Info";
 import { Container } from "../shared/Container";
-import { Paragraph } from "../shared/Paragraph";
 import { Title } from "../shared/Title";
 import CtaButtonBlue from "../gadgets/ctaButtonBlue";
 

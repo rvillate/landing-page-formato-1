@@ -41,7 +41,7 @@ export const Hero = () => {
         {/* Lado derecho: bloque azul con diagonal */}
         <div
           className="
-            w-full lg:w-1/2 bg-blue-500 text-white flex flex-col justify-center 
+            w-full lg:w-1/2 bg-color-hero text-white flex flex-col justify-center 
             px-8 lg:px-16 relative z-10
             [clip-path:polygon(0%_0,100%_0,100%_100%,0_100%)]
             md:[clip-path:polygon(0%_0,100%_0,100%_100%,0_100%)]

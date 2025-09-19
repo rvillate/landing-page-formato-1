@@ -4,6 +4,13 @@
     "contactMe": "Contactanos ahora",
     "phoneNumber": "14245087835"
   },
+  "nav": {
+    "home": "Inicio",
+    "services": "Servicios",
+    "emergency": "Emergencia",
+    "warranty": "Garantía",
+    "map": "Mapa"
+  },
   "hero": {
     "title": "Instalacion de cerraduras Recidenciales y Comerciales",
     "list": {
