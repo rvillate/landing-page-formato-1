@@ -1,9 +1,10 @@
 import { useEffect, useState } from "react";
-import { FaWhatsapp } from "react-icons/fa";
+// import { FaWhatsapp } from "react-icons/fa";
 import { Paragraph } from "../shared/Paragraph";
 import { t } from "i18next";
-import CtaButton from "../gadgets/ctaButton";
+// import CtaButton from "../gadgets/ctaButton";
 import CtaButtonBlue from "../gadgets/ctaButtonBlue";
+import { CtaButtonBlueRotating } from "../gadgets/ctaButtonBlueRotating";
 
 interface ServiceProps {
   title: string;
@@ -77,7 +78,7 @@ export const Service = ({ title, description, images, alt }: ServiceProps) => {
     </a> */}
 
     <div className="flex justify-center mt-8 ">
-                  <CtaButtonBlue />
+                  <CtaButtonBlueRotating />
                 </div>
   </div>
 </div>

@@ -4,6 +4,7 @@ import { Title } from "../shared/Title";
 import { FaStar, FaRegStar, FaGem } from "react-icons/fa";
 import { useTranslation } from "react-i18next";
 import CtaButtonBlue from "../gadgets/ctaButtonBlue";
+import { CtaButtonBlueRotating } from "../gadgets/ctaButtonBlueRotating";
 
 type Review = {
   name: string;
@@ -31,7 +32,8 @@ export const ReviewsCarousel = () => {
   const [current, setCurrent] = useState(visibleCards); // empezamos en el "original"
   const [isTransitioning, setIsTransitioning] = useState(true);
 
-  const autoplayRef = useRef<NodeJS.Timeout | null>(null);
+  const autoplayRef = useRef<ReturnType<typeof setInterval> | null>(null);
+
 
   const resetAutoplay = () => {
     if (autoplayRef.current) clearInterval(autoplayRef.current);
@@ -173,7 +175,7 @@ export const ReviewsCarousel = () => {
           </button>
         </div>
         <div className="flex justify-center pt-5">
-                  <CtaButtonBlue />
+                  <CtaButtonBlueRotating />
                 </div>
       </Container>
     </section>

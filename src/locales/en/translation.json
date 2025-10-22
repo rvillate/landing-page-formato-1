@@ -62,6 +62,7 @@
   },
   "emergency": {
     "title": "Emergency",
+    "title2": "Near you",
     "recurrency": "24x7",
     "description": "Emergency locksmith service available 24 hours a day, 7 days a week. Call us for immediate assistance."
   },

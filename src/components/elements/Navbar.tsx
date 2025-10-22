@@ -1,17 +1,18 @@
 import { Container } from "../shared/Container";
 import logo from "/assets/icon.svg";
 import { NavItem } from "../shared/NavItem";
-import { BtnLink } from "../shared/BtnLink";
+// import { BtnLink } from "../shared/BtnLink";
 import { useThemeStore } from "../../store/ThemeStore";
 import { t } from "i18next";
-import CtaButton from "../gadgets/ctaButton";
+// import CtaButton from "../gadgets/ctaButton";
 import CtaButtonBlue from "../gadgets/ctaButtonBlue";
+import { CtaButtonBlueRotating } from "../gadgets/ctaButtonBlueRotating";
 
 export const navItems = [
   { href: "#", key: "nav.home" },
   { href: "#service-digital-locks", key: "nav.services" },
   { href: "#emergency", key: "nav.emergency" },
-  { href: "#warranty", key: "nav.warranty" },
+  //{ href: "#warranty", key: "nav.warranty" },
   { href: "#map-points", key: "nav.map" },
 ];
 
@@ -24,14 +25,19 @@ export const Navbar = () => {
       <Container>
         <nav className="w-full flex justify-between gap-6 relative">
           {/* Logo */}
-          <div className="min-w-max inline-flex relative mx-auto lg:mx-0">
-            <a href="/" className="relative flex items-center gap-3">
-              <img src={logo} alt="SmartLockers" className="w-10 h-10" />
-              <div className="inline-flex text-lg font-semibold text-heading-1">
-                {t("common.companyName")}
-              </div>
-            </a>
-          </div>
+                    <div className="min-w-max inline-flex relative mx-auto lg:mx-0 flex-col items-center">
+  <a href="/" className="relative flex items-center gap-3">
+    <img src={logo} alt="SmartLockers" className="w-10 h-10" />
+    <div className="inline-flex text-lg font-semibold text-heading-1">
+      {t("common.companyName")}
+    </div>
+  </a>
+
+  {/* Botón solo visible en móviles */}
+  <div className="mt-3 w-full flex justify-center lg:hidden">
+    <CtaButtonBlueRotating />
+  </div>
+</div>
 
 
           <div
@@ -53,7 +59,7 @@ export const Navbar = () => {
                             lg:pb-0 border-b border-box-border lg:border-0
                             px-6 lg:px-0"
             >
-                            <CtaButtonBlue />
+                            <CtaButtonBlueRotating />
             </div>
           </div>
 

@@ -1,16 +1,17 @@
 import { Container } from "../shared/Container";
-import { MapContainer, TileLayer, Marker, Popup, Polygon, Circle } from "react-leaflet";
+import { MapContainer, TileLayer, Marker, Popup, Polygon } from "react-leaflet";
 import { LatLngTuple, Icon } from "leaflet";
 import "leaflet/dist/leaflet.css";
 import "leaflet.markercluster/dist/MarkerCluster.css";
 import "leaflet.markercluster/dist/MarkerCluster.Default.css";
-import L from "leaflet";
+// import L from "leaflet";
 import "leaflet.markercluster";
 import { Title } from "../shared/Title";
 import { t } from "i18next";
-import { GeoJSON } from "react-leaflet";
-import laBoundary from "../../../assets/geojson/LosAngeles.geojson";
+// import { GeoJSON } from "react-leaflet";
+// import laBoundary from "../../../assets/geojson/LosAngeles.geojson";
 import CtaButtonBlue from "../gadgets/ctaButtonBlue";
+import { CtaButtonBlueRotating } from "../gadgets/ctaButtonBlueRotating";
 
 
 // --- Íconos personalizados ---
@@ -64,9 +65,6 @@ const coverageArea: LatLngTuple[] = [
   [34.0, -118.0],
   [40.9, -74.3],   // cerrar el polígono
 ];
-
-// --- Ejemplo de círculo ---
-const highlightCenter: LatLngTuple = [40.7128, -74.006];
 
 export const MapPoints = () => {
   return (
@@ -145,7 +143,7 @@ export const MapPoints = () => {
           </MapContainer>
         </div>
         <div className="flex justify-center pt-5">
-                  <CtaButtonBlue />
+                  <CtaButtonBlueRotating />
                 </div>
       </Container>
     </section>

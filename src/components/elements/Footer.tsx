@@ -14,10 +14,10 @@ export const Footer = () => {
               <img src={logo} className="w-8 h-8" alt="Logo Locksmith" />
               <div className="flex flex-col leading-tight">
                 <span className="font-bold text-lg">
-                  {t("footer.brand.name").split(" ")[0]}
+                  {t("common.companyName").split(" ")[0]}
                 </span>
                 <span className="font-bold text-lg">
-                  {t("footer.brand.name").split(" ")[1]}
+                  {t("common.companyName").split(" ")[1]}
                 </span>
               </div>
             </div>
