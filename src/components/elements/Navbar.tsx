@@ -20,16 +20,29 @@ export const Navbar = () => {
   const { toggleTheme, theme } = useThemeStore();
 
   return (
-    <header className="absolute inset-x-0 top-0 z-50 py-6">
+    <header className="absolute inset-x-0 top-0 z-50 py-2 md:py-4">
       <Container>
         <nav className="w-full flex justify-between gap-6 relative">
           {/* Logo */}
                     <div className="min-w-max inline-flex relative mx-auto lg:mx-0 flex-col items-center">
-  <a href="/" className="relative flex items-center gap-3">
-    <img src={logo} alt="SmartLockers" className="w-10 h-10" />
-    <div className="inline-flex text-lg font-semibold text-heading-1">
+  <a href="/" className="relative flex items-center">
+    <div
+      className={`h-16 md:h-20 aspect-[945/491] rounded-md overflow-hidden flex items-center justify-center ${
+        theme === "dark" ? "bg-black" : "bg-white"
+      }`}
+    >
+      <img
+        src={logo}
+        alt="SmartLockers"
+        className={`w-full h-full object-contain ${theme === "dark" ? "invert" : ""}`}
+      />
+    </div>
+      {/*
+      <div className="inline-flex text-lg font-semibold text-heading-1">
       {t("common.companyName")}
     </div>
+      */}
+    
   </a>
 </div>
 

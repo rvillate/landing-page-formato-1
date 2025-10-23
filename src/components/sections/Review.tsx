@@ -3,7 +3,6 @@ import { Container } from "../shared/Container";
 import { Title } from "../shared/Title";
 import { FaStar, FaRegStar, FaGem } from "react-icons/fa";
 import { useTranslation } from "react-i18next";
-import CtaButtonBlue from "../gadgets/ctaButtonBlue";
 import { CtaButtonBlueRotating } from "../gadgets/ctaButtonBlueRotating";
 
 type Review = {

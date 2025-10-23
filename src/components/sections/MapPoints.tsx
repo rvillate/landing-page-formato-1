@@ -1,30 +1,25 @@
 import { Container } from "../shared/Container";
-import { MapContainer, TileLayer, Marker, Popup, Polygon } from "react-leaflet";
-import { LatLngTuple, Icon } from "leaflet";
+import { MapContainer, TileLayer, Polygon } from "react-leaflet";
+import { LatLngTuple } from "leaflet";
 import "leaflet/dist/leaflet.css";
 import "leaflet.markercluster/dist/MarkerCluster.css";
 import "leaflet.markercluster/dist/MarkerCluster.Default.css";
 // import L from "leaflet";
 import "leaflet.markercluster";
 import { Title } from "../shared/Title";
+import { useThemeStore } from "../../store/ThemeStore";
 import { t } from "i18next";
 // import { GeoJSON } from "react-leaflet";
 // import laBoundary from "../../../assets/geojson/LosAngeles.geojson";
-import CtaButtonBlue from "../gadgets/ctaButtonBlue";
 import { CtaButtonBlueRotating } from "../gadgets/ctaButtonBlueRotating";
 
 
 // --- Íconos personalizados ---
-const officeIcon = new Icon({
-  iconUrl: "https://cdn-icons-png.flaticon.com/512/684/684908.png",
-  iconSize: [30, 30],
-});
 
-const storeIcon = new Icon({
-  iconUrl: "https://cdn-icons-png.flaticon.com/512/3176/3176366.png",
-  iconSize: [30, 30],
-});
 
+
+
+/*
 // --- Data dinámica (podría venir de un JSON o DB) ---
 const points: {
   id: number;
@@ -56,17 +51,20 @@ const points: {
       url: "https://goo.gl/maps/Gnqz9quAoxs",
     },
   ];
-
+*/
 // --- Ejemplo de área de cobertura (polígono) ---
 const coverageArea: LatLngTuple[] = [
-  [40.9, -74.3],   // cerca de NY
-  [41.0, -87.9],   // cerca de Chicago
-  [34.3, -118.6],  // cerca de LA
-  [34.0, -118.0],
-  [40.9, -74.3],   // cerrar el polígono
+  [34.038249178070316, -118.55326140163413],[34.05965544872467, -118.51180386021927],[34.07657762519756, -118.48991647114744],[34.109203704948975, -118.45489664863246],[34.127323870242854, -118.3921527999598],[34.12973959891542, -118.32794979201569],[34.1333630624833, -118.25791014698574],[34.14171071885661, -118.2278355275678],[34.14522240968725, -118.20520595812971],[34.14054012281074, -118.18399073678148],[34.12297923618599, -118.17621182228713],[34.1024869244978, -118.17409030015232],[34.08491813496439, -118.16277551543328],[34.06441660566481, -118.16772573374784],[34.05914398188037, -118.19176965127583],[34.04156620030482, -118.19318399936571],[34.02808743334262, -118.19389117341066],[34.02808743334262, -118.19389117341066],[34.0140203499838, -118.21439922071391],[34.01284798780439, -118.23490726801722],[33.998778379031336, -118.23773596419699],[33.990570030900955, -118.25400096723061],[33.97766959600989, -118.25682966341037],[33.96594022897719, -118.25824401150025],[33.954209244174294, -118.25541531532048],[33.950689633308386, -118.24268618251156],[33.94892977328703, -118.23207857183745],[33.93719644319471, -118.23207857183745],[33.93074242233302, -118.24339335655648],[33.93015566890864, -118.2575368374553],[33.92604828175348, -118.26885162217437],[33.921940696533525, -118.28087358093836],[33.90726913263938, -118.28511662520799],[33.89963892123949, -118.3077461946461],[33.89787800624657, -118.41523664947705],[33.92604828175348, -118.43433034869047],[33.96007493878022, -118.45625274408361],[33.99467430409483, -118.48595405397113],[34.02750135141785, -118.51989840812828],[34.039808221776944, -118.547478192511],
 ];
 
 export const MapPoints = () => {
+  const { theme } = useThemeStore();
+  const isDark = theme === "dark";
+  const tileUrl = isDark
+    ? "https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png"
+    : "https://mt1.google.com/vt/lyrs=r&x={x}&y={y}&z={z}";
+  const tileAttribution =
+    '&copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/">CARTO</a>';
   return (
     <section id="map-points" className="relative mt-6">
       <div className="text-center mb-10">
@@ -75,13 +73,13 @@ export const MapPoints = () => {
       <Container>
         <div className="flex justify-center">
           <MapContainer
-            center={[39.5, -98.35]} // centro aproximado de EE. UU.
-            zoom={4}
+            center={[34.04859775030643, -118.404629035433]} // centro aproximado de EE. UU.
+            zoom={10}
             className="w-full max-w-4xl h-80 md:h-96 lg:h-[400px] rounded-xl shadow-lg"
           >
-            {/* Base layer */}
+            {/* Base layer with theme-aware tiles */}
             <TileLayer
-              url="https://mt1.google.com/vt/lyrs=r&x={x}&y={y}&z={z}" //{"Google Maps"}
+              url={tileUrl}
               // url="http://www.google.cn/maps/vt?lyrs=s@189&gl=cn&x={x}&y={y}&z={z}" //{"Google Satellite"}
               // url="https://mt1.google.com/vt/lyrs=y&x={x}&y={y}&z={z}" //{"Google Hybrid"}
               // url="https://mt1.google.com/vt/lyrs=t&x={x}&y={y}&z={z}" //{"Google Terrain"}
@@ -96,11 +94,11 @@ export const MapPoints = () => {
               // url="https://server.arcgisonline.com/ArcGIS/rest/services/World_Topo_Map/MapServer/tile/{z}/{y}/{x}" //ESRI Topo
               // url="https://server.arcgisonline.com/ArcGIS/rest/services/Reference/World_Transportation/MapServer/tile/{z}/{y}/{x}" //ESRI Transportation
 
-              attribution='&copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a>'
+              attribution={tileAttribution}
             />
 
             {/* Área de cobertura */}
-            <Polygon positions={coverageArea} color="#5472FF" />
+            <Polygon positions={coverageArea} color={isDark ? "#6EA8FF" : "#5472FF"} />
 
 
 
@@ -109,7 +107,7 @@ export const MapPoints = () => {
             {/* <Circle center={highlightCenter} radius={30000} color="red" /> */}
 
             {/* Marcadores dinámicos */}
-            {points.map((p) => (
+            {/*points.map((p) => (
               <Marker
                 key={p.id}
                 position={p.coords}
@@ -139,7 +137,7 @@ export const MapPoints = () => {
                   </div>
                 </Popup>
               </Marker>
-            ))}
+            ))*/}
           </MapContainer>
         </div>
         <div className="flex justify-center pt-5">

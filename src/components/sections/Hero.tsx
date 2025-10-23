@@ -9,7 +9,7 @@ export const Hero = () => {
   const { t } = useTranslation();
 
   return (
-    <section id="hero" className="relative w-full min-h-[80vh] pt-20">
+    <section id="hero" className="relative w-full min-h-[80vh] pt-25">
       <div className="flex flex-col lg:flex-row h-full relative">
         {/* Lado izquierdo: imagen (no tocar) */}
         <div className="static h-[240px] sm:h-[400px] md:h-[480px] lg:h-[570px] w-full lg:w-1/2 overflow-hidden bg-transparent z-10">{/*h-[340px] sm:h-[400px] md:h-[480px] lg:h-[570px] ajusta el recorte de la imagen dependiendo de la vista actual*/}

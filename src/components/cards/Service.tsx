@@ -3,7 +3,6 @@ import { useEffect, useState } from "react";
 import { Paragraph } from "../shared/Paragraph";
 import { t } from "i18next";
 // import CtaButton from "../gadgets/ctaButton";
-import CtaButtonBlue from "../gadgets/ctaButtonBlue";
 import { CtaButtonBlueRotating } from "../gadgets/ctaButtonBlueRotating";
 
 interface ServiceProps {

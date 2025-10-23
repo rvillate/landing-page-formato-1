@@ -22,12 +22,36 @@ export const Footer = () => {
               </div>
             </div>
             <ul className="space-y-2 text-sm">
-              <li>{t("footer.menu.digitalLocks")}</li>
-              <li>{t("footer.menu.traditionalLocks")}</li>
-              <li>{t("footer.menu.emergency")}</li>
-              <li>{t("footer.menu.automobiles")}</li>
-              <li>{t("footer.menu.aboutUs")}</li>
-              <li>{t("footer.menu.contact")}</li>
+              <li>
+                <a href="#service-digital-locks" className="hover:underline">
+                  {t("footer.menu.digitalLocks")}
+                </a>
+              </li>
+              <li>
+                <a href="#services-traditional-locks" className="hover:underline">
+                  {t("footer.menu.traditionalLocks")}
+                </a>
+              </li>
+              <li>
+                <a href="#emergency" className="hover:underline">
+                  {t("footer.menu.emergency")}
+                </a>
+              </li>
+              <li>
+                <a href="#services-automobiles" className="hover:underline">
+                  {t("footer.menu.automobiles")}
+                </a>
+              </li>
+              <li>
+                <a href="#hero" className="hover:underline">
+                  {t("footer.menu.aboutUs")}
+                </a>
+              </li>
+              <li>
+                <a href="#contact" className="hover:underline">
+                  {t("footer.menu.contact")}
+                </a>
+              </li>
             </ul>
           </div>
 
@@ -35,10 +59,43 @@ export const Footer = () => {
           <div>
             <h4 className="font-semibold mb-3">{t("footer.contact.title")}</h4>
             <ul className="space-y-2 text-sm">
-              <li><span className="font-bold">{t("footer.contact.phone")}</span></li>
-              <li><span className="font-bold">{t("footer.contact.email")}</span></li>
-              <li><span className="font-bold">{t("footer.contact.warranty")}</span></li>
-              <li><span className="font-bold">{t("footer.contact.privacyPolicy")}</span></li>
+              <li>
+                <span className="font-bold mr-2">{t("footer.contact.phone")}:</span>
+                <a
+                  href={`tel:${t("common.phoneNumber")}`}
+                  className="text-blue-600 hover:underline"
+                >
+                  {t("common.phoneNumber")}
+                </a>
+                <span className="mx-2">·</span>
+                <a
+                  href={`https://wa.me/${t("common.phoneNumber")}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-green-600 hover:underline"
+                >
+                  WhatsApp
+                </a>
+              </li>
+              <li>
+                <span className="font-bold mr-2">{t("footer.contact.email")}:</span>
+                <a
+                  href={`mailto:info@tucorreo.com?subject=${encodeURIComponent(t("common.companyName"))}`}
+                  className="hover:underline"
+                >
+                  info@tucorreo.com
+                </a>
+              </li>
+              <li>
+                <a href="#warranty" className="font-bold hover:underline">
+                  {t("footer.contact.warranty")}
+                </a>
+              </li>
+              <li>
+                <a href="#privacy-policy" className="font-bold hover:underline">
+                  {t("footer.contact.privacyPolicy")}
+                </a>
+              </li>
             </ul>
           </div>
 
@@ -46,9 +103,21 @@ export const Footer = () => {
           <div>
             <h4 className="font-semibold mb-3">{t("footer.social.title")}</h4>
             <ul className="space-y-2 text-sm">
-              <li><span className="font-bold">{t("footer.social.tiktok")}</span></li>
-              <li><span className="font-bold">{t("footer.social.facebook")}</span></li>
-              <li><span className="font-bold">{t("footer.social.instagram")}</span></li>
+              <li>
+                <a href="#" className="font-bold hover:underline" target="_blank" rel="noopener noreferrer">
+                  {t("footer.social.tiktok")}
+                </a>
+              </li>
+              <li>
+                <a href="#" className="font-bold hover:underline" target="_blank" rel="noopener noreferrer">
+                  {t("footer.social.facebook")}
+                </a>
+              </li>
+              <li>
+                <a href="#" className="font-bold hover:underline" target="_blank" rel="noopener noreferrer">
+                  {t("footer.social.instagram")}
+                </a>
+              </li>
             </ul>
           </div>
         </div>
