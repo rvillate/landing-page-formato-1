@@ -1,10 +1,11 @@
-import { Layout } from "./components/Layout";
+﻿import { Layout } from "./components/Layout";
 import { MapPoints } from "./components/sections/MapPoints";
 import { ReviewsCarousel } from "./components/sections/Review";
 // import { Bar } from "./components/sections/Bar";
 import { Hero } from "./components/sections/Hero";
 import { ServicesDigitalLocks } from "./components/sections/ServicesDigitalLocks";
 import { ServicesTraditionalsLocks } from "./components/sections/ServicesTraditionalsLocks";
+import { ServicesAutomobiles } from "./components/sections/ServicesAutomobiles";
 import { Emergency } from "./components/sections/Emergency";
 // import { VisualGallery } from "./components/sections/VisualGallery";
 // import { Numbers } from "./components/sections/Numbers";
@@ -18,6 +19,7 @@ function App() {
       {/* <Numbers /> */}
       <ServicesDigitalLocks />
       <ServicesTraditionalsLocks />
+      <ServicesAutomobiles />
       
       {/* <Bar/> */}
       
@@ -25,9 +27,11 @@ function App() {
       {/* <Warranty/> */}
       <MapPoints/>
       {/* <VisualGallery/> */}
-      <ReviewsCarousel />
+      {/* <ReviewsCarousel /> */}
     </Layout>
   );
 }
 
 export default App;
+
+

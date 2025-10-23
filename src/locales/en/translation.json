@@ -1,4 +1,4 @@
-{
+﻿{
   "common": {
     "companyName": "Locksmith LX",
     "contactMe": "Contact us",
@@ -43,7 +43,7 @@
     }
   },
   "servicesTraditionalLocks": {
-    "title": "Traditional Locks",
+    "title": "Commercial Locks",
     "subtitle": "Commercial and Residential",
     "description": "LocksmithLX offers the very best residential locksmith services in Los Angeles and the surrounding areas. Our professional team is ready to assist you with all your new and existing traditional locks:"
   },
@@ -120,7 +120,7 @@
   "footer": {
     "menu": {
       "digitalLocks": "Digital locks",
-      "traditionalLocks": "Traditional locks",
+      "traditionalLocks": "Commercial locks",
       "emergency": "Emergency",
       "automobiles": "Automobiles",
       "aboutUs": "About us",
@@ -138,6 +138,23 @@
       "tiktok": "TikTok",
       "facebook": "Facebook",
       "instagram": "Instagram"
+    }
+  },
+  "servicesAutomobiles": {
+    "title": "Automotive Services",
+    "description": "Automotive locksmith services to unlock and control your vehicle using secure, modern methods.",
+    "subtitle": "Smart access and control"
+  },
+  "servicesListAutomobiles": {
+    "service2": {
+      "alt": "Unlock with your fingerprint",
+      "title": "Unlock with your fingerprint",
+      "description": "Biometric solutions to unlock your car with your fingerprint—no physical keys."
+    },
+    "service1": {
+      "alt": "Unlock with your phone",
+      "title": "Unlock with your phone",
+      "description": "We set up systems so you can unlock your car with your phone safely."
     }
   }
 }

@@ -1,4 +1,4 @@
-{
+﻿{
   "common": {
     "companyName": "Locksmith LX",
     "contactMe": "Contactanos ahora",
@@ -8,15 +8,15 @@
     "home": "Inicio",
     "services": "Servicios",
     "emergency": "Emergencia",
-    "warranty": "Garantía",
+    "warranty": "Garantí­a",
     "map": "Mapa"
   },
   "hero": {
-    "title": "Instalacion de cerraduras Recidenciales y Comerciales",
+    "title": "Instalación de cerraduras Residenciales y Comerciales",
     "list": {
       "item1": "Cerrajeros con licencia y asegurados Cerca de ti",
       "item2": "Tiempo de respuesta de emergencia de 20 minutos",
-      "item3": "Los cerrajeros mas rapidos y economicos de Los Angeles"
+      "item3": "Los cerrajeros más rápidos y económicos de Los Ángeles"
     },
     "placeholder": "Tu número de contacto",
     "cta": "Llamar ahora"
@@ -44,9 +44,9 @@
     }
   },
   "servicesTraditionalLocks": {
-    "title": "Chapas Tradicionales",
+    "title": "Chapas Comerciales",
     "subtitle": "Comercial y Residencial",
-    "description": "LocksmithLX ofrece los mejores servicios de cerrajería residencial en Los Ángeles y sus alrededores. Nuestro equipo profesional está listo para ayudarte con todas tus cerraduras tradicionales nuevas y existentes"
+    "description": "LocksmithLX ofrece los mejores servicios de cerrajería residencial en Los Ángeles y sus alrededores. Nuestro equipo profesional está listo para ayudarte con todas tus cerraduras comerciales nuevas y existentes"
   },
   "servicesListTraditionalLocks": {
     "service1": {
@@ -121,7 +121,7 @@
   "footer": {
     "menu": {
       "digitalLocks": "Chapas digitales",
-      "traditionalLocks": "Chapas tradicionales",
+      "traditionalLocks": "Chapas comerciales",
       "emergency": "Emergencia",
       "automobiles": "Automóviles",
       "aboutUs": "Nosotros",
@@ -131,7 +131,7 @@
       "title": "Contacto",
       "phone": "celular",
       "email": "correo",
-      "warranty": "Garantía",
+      "warranty": "Garantí­a",
       "privacyPolicy": "Privacy policy"
     },
     "social": {
@@ -139,6 +139,23 @@
       "tiktok": "tiktok",
       "facebook": "facebook",
       "instagram": "instagram"
+    }
+  },
+  "servicesAutomobiles": {
+    "title": "Servicios para Automóviles",
+    "description": "Servicios de cerrajería automotriz para abrir y controlar tu vehículo con métodos seguros y modernos.",
+    "subtitle": "Apertura y control inteligente"
+  },
+  "servicesListAutomobiles": {
+    "service2": {
+      "alt": "Abre con tu huella",
+      "title": "Abre con tu huella",
+      "description": "Soluciones biométricas para abrir tu auto con tu huella digital, sin llaves físicas."
+    },
+    "service1": {
+      "alt": "Abre con el celular",
+      "title": "Abre con el Celular",
+      "description": "Instalamos y configuramos sistemas que permiten abrir tu auto desde el celular con total seguridad."
     }
   }
 }
