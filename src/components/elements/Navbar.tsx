@@ -5,7 +5,6 @@ import { NavItem } from "../shared/NavItem";
 import { useThemeStore } from "../../store/ThemeStore";
 import { t } from "i18next";
 // import CtaButton from "../gadgets/ctaButton";
-import CtaButtonBlue from "../gadgets/ctaButtonBlue";
 import { CtaButtonBlueRotating } from "../gadgets/ctaButtonBlueRotating";
 
 export const navItems = [
@@ -32,11 +31,6 @@ export const Navbar = () => {
       {t("common.companyName")}
     </div>
   </a>
-
-  {/* Botón solo visible en móviles */}
-  <div className="mt-3 w-full flex justify-center lg:hidden">
-    <CtaButtonBlueRotating />
-  </div>
 </div>
 
 

@@ -12,18 +12,18 @@ export const Hero = () => {
     <section id="hero" className="relative w-full min-h-[80vh] pt-20">
       <div className="flex flex-col lg:flex-row h-full relative">
         {/* Lado izquierdo: imagen (no tocar) */}
-        <div className="static h-[570px] w-full lg:w-1/2 overflow-hidden bg-transparent z-10">
+        <div className="static h-[240px] sm:h-[400px] md:h-[480px] lg:h-[570px] w-full lg:w-1/2 overflow-hidden bg-transparent z-10">{/*h-[340px] sm:h-[400px] md:h-[480px] lg:h-[570px] ajusta el recorte de la imagen dependiendo de la vista actual*/}
           <img
             src={hero3}
             alt="Mobile locksmith service"
-            className="w-[140%] h-full object-cover"
+            className="w-[140%] h-full object-cover object-[50%_25%] md:object-[50%_25%]"/*object-[50%_15%] indica que tan desfasada estará la imagen (offset)*/
           />
         </div>
 
         {/* Lado derecho: bloque azul con diagonal */}
         <div
           className="
-            w-full lg:w-1/2 bg-color-hero text-white flex flex-col justify-center 
+            w-full lg:w-[calc(50%+2.5rem)] bg-color-hero text-white flex flex-col justify-center 
             px-8 lg:px-16 relative z-30 lg:-ml-10
             [clip-path:polygon(0%_0,100%_0,100%_100%,0_100%)]
             md:[clip-path:polygon(0%_0,100%_0,100%_100%,0_100%)]
