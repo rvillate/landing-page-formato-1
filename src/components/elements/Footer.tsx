@@ -60,29 +60,9 @@ export const Footer = () => {
                   {t("common.phoneNumber")}
                 </a>
                 <span className="mx-2">·</span>
-                <a
-                  href={`https://wa.me/${t("common.phoneNumber")}`}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-green-600 hover:underline"
-                >
-                  WhatsApp
-                </a>
+                
               </li>
-              <li>
-                <span className="font-bold mr-2">{t("footer.contact.email")}:</span>
-                <a
-                  href={`mailto:info@tucorreo.com?subject=${encodeURIComponent(t("common.companyName"))}`}
-                  className="hover:underline"
-                >
-                  info@tucorreo.com
-                </a>
-              </li>
-              <li>
-                <a href="#warranty" className="font-bold hover:underline">
-                  {t("footer.contact.warranty")}
-                </a>
-              </li>
+              
               <li>
                 <a href="#privacy-policy" className="font-bold hover:underline">
                   {t("footer.contact.privacyPolicy")}

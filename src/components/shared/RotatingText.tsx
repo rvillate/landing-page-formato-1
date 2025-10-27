@@ -42,6 +42,8 @@ export interface RotatingTextProps
   mainClassName?: string;
   splitLevelClassName?: string;
   elementLevelClassName?: string;
+  iconSrc?: string;
+  iconAlt?: string;
 }
 
 const RotatingText = forwardRef<RotatingTextRef, RotatingTextProps>(
@@ -64,6 +66,8 @@ const RotatingText = forwardRef<RotatingTextRef, RotatingTextProps>(
       mainClassName,
       splitLevelClassName,
       elementLevelClassName,
+      iconSrc,
+      iconAlt,
       ...rest
     },
     ref
@@ -186,8 +190,12 @@ const RotatingText = forwardRef<RotatingTextRef, RotatingTextProps>(
         layout
         transition={transition}
       >
-        <div className='pr-2'>
-          <FaWhatsapp size={22} />
+        <div className='pr-2 flex items-center'>
+          {iconSrc ? (
+            <img src={iconSrc} alt={iconAlt || 'icon'} className="w-5 h-5" />
+          ) : (
+            <FaWhatsapp size={22} />
+          )}
         </div>
         <span className="sr-only">{texts[currentTextIndex]}</span>
         <AnimatePresence mode={animatePresenceMode} initial={animatePresenceInitial}>
