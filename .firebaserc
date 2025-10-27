@@ -1,5 +1,8 @@
 {
   "projects": {
-    "default": "devra-1c466"
-  }
+    "default": "website-bc13c",
+    "webpage": "website-bc13c"
+  },
+  "targets": {},
+  "etags": {}
 }

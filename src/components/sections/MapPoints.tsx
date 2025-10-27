@@ -60,10 +60,17 @@ const coverageArea: LatLngTuple[] = [
 export const MapPoints = () => {
   const { theme } = useThemeStore();
   const isDark = theme === "dark";
+  
   const tileUrl = isDark
+    ? "https://mt1.google.com/vt/lyrs=r&x={x}&y={y}&z={z}"
+    : "https://mt1.google.com/vt/lyrs=r&x={x}&y={y}&z={z}";
+  
+  /*const tileUrl = isDark
     ? "https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png"
     : "https://mt1.google.com/vt/lyrs=r&x={x}&y={y}&z={z}";
-  const tileAttribution =
+  */
+  
+    const tileAttribution =
     '&copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/">CARTO</a>';
   return (
     <section id="map-points" className="relative mt-6">

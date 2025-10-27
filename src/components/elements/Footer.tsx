@@ -11,15 +11,7 @@ export const Footer = () => {
           {/* Columna izquierda: logo y secciones */}
           <div className="flex flex-col gap-4">
             <div className="flex items-center gap-3">
-              <img src={logo} className="w-8 h-8" alt="Logo Locksmith" />
-              <div className="flex flex-col leading-tight">
-                <span className="font-bold text-lg">
-                  {t("common.companyName").split(" ")[0]}
-                </span>
-                <span className="font-bold text-lg">
-                  {t("common.companyName").split(" ")[1]}
-                </span>
-              </div>
+              <img src={logo} className="w-35 h-15" alt="Logo Locksmith" />
             </div>
             <ul className="space-y-2 text-sm">
               <li>
