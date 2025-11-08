@@ -27,7 +27,7 @@ export const Navbar = () => {
                     <div className="min-w-max inline-flex relative mx-auto lg:mx-0 flex-col items-center">
   <a href="/" className="relative flex items-center">
     <div
-      className={`h-[80px] md:h-[110px] aspect-[945/491] rounded-md overflow-hidden flex items-center justify-center p-2 md:p-3 ${
+      className={`h-[96px] md:h-[110px] aspect-[945/491] rounded-md overflow-hidden flex items-center justify-center px-3 py-1 md:p-3 ${
         theme === "dark" ? "bg-black" : "bg-white"
       }`}
     >

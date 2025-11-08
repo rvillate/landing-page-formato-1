@@ -3,13 +3,13 @@ import { FaPhoneAlt, FaArrowUp } from "react-icons/fa";
 //import { FaWhatsapp } from "react-icons/fa";
 import apple from "/assets/apple.svg";
 
-function normalizeE164(numberStr) {
+function normalizeE164(numberStr: string): string {
   // deja solo dígitos
   const digits = String(numberStr || "").replace(/[^\d]/g, "");
   return digits;
 }
 
-function buildSmsUrl(phoneE164, body) {
+function buildSmsUrl(phoneE164: string, body?: string): string {
   const ua = navigator.userAgent || "";
   const isIOS = /iPad|iPhone|iPod/.test(ua);
   const isMac = /Macintosh/.test(ua);
@@ -24,7 +24,7 @@ export const FloatingButtons = () => {
   const raw = t("common.phoneNumber");         // ej: 14245087835 o +1 424 508 7835
   const phone = normalizeE164(raw);            // -> "14245087835"
   const smsHref = buildSmsUrl(phone, t("common.defaultSms") || "Hola, necesito un cerrajero 24/7");
-  const waHref  = `https://wa.me/${phone}`;
+  //const waHref  = `https://wa.me/${phone}`;
   const telHref = `tel:+${phone}`;
 
   return (

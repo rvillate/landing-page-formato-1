@@ -60,13 +60,6 @@ export const Footer = () => {
                   {t("common.phoneNumber")}
                 </a>
                 <span className="mx-2">·</span>
-                
-              </li>
-              
-              <li>
-                <a href="#privacy-policy" className="font-bold hover:underline">
-                  {t("footer.contact.privacyPolicy")}
-                </a>
               </li>
             </ul>
           </div>

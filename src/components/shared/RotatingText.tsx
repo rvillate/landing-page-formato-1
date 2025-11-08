@@ -185,23 +185,23 @@ const RotatingText = forwardRef<RotatingTextRef, RotatingTextProps>(
 
     return (
       <motion.span
-        className={cn('flex flex-wrap whitespace-pre-wrap relative', mainClassName)}
+        className={cn('relative flex items-center justify-center whitespace-pre-wrap w-full', mainClassName)}
         {...rest}
         layout
         transition={transition}
       >
-        <div className='pr-2 flex items-center'>
+        <div className='absolute left-2 sm:left-3 md:left-3 top-1/2 -translate-y-1/2 flex items-center'>
           {iconSrc ? (
-            <img src={iconSrc} alt={iconAlt || 'icon'} className="w-5 h-5" />
+            <img src={iconSrc} alt={iconAlt || 'icon'} className="w-6 h-6 md:w-7 md:h-7" />
           ) : (
-            <FaWhatsapp size={22} />
+            <FaWhatsapp size={24} />
           )}
         </div>
         <span className="sr-only">{texts[currentTextIndex]}</span>
         <AnimatePresence mode={animatePresenceMode} initial={animatePresenceInitial}>
           <motion.span
             key={currentTextIndex}
-            className={cn(splitBy === 'lines' ? 'flex flex-col w-full' : 'flex flex-wrap whitespace-pre-wrap relative')}
+            className={cn(splitBy === 'lines' ? 'flex flex-col w-full text-center' : 'flex flex-wrap whitespace-pre-wrap relative w-full justify-center text-center')}
             layout
             aria-hidden="true"
           >
