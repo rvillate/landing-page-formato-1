@@ -1,5 +1,5 @@
 import { Container } from "../shared/Container";
-import logo from "/assets/icon.svg";
+import logo from "/assets/logos/Imagen1.png";
 import { t } from "i18next";
 
 export const Footer = () => {

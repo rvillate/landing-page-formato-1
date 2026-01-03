@@ -1,6 +1,6 @@
 import { useTranslation } from "react-i18next";
 import listVerification from "/assets/images/hero/list-verification.svg";
-import hero3 from "/assets/images/hero/img_initial_1.jpg";
+import hero3 from "/assets/images/hero/image1.webp";
 import CtaButtonBlueRotating from "../gadgets/ctaButtonBlueRotating";
 
 import { Container } from "../shared/Container";
