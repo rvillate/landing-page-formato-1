@@ -24,6 +24,6 @@ jobs:
     - name: App service auth
       uses: azure/webapps-deploy@v2
       with:
-        app-name: 'amineswebapp '
+        app-name: 'landing-page-jp'
         publish-profile: ${{ secrets.AZURE_WEBAPP_PUBLISH_PROFILE }}
         images: 'rvillate/landing-page-formato-1'
