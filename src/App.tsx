@@ -6,6 +6,7 @@ import { Hero } from "./components/sections/Hero";
 import { ServicesDigitalLocks } from "./components/sections/ServicesDigitalLocks";
 import { ServicesTraditionalsLocks } from "./components/sections/ServicesTraditionalsLocks";
 import { ServicesAutomobiles } from "./components/sections/ServicesAutomobiles";
+import { RevealOnScroll } from "./components/shared/RevealOnScroll";
 //import { Emergency } from "./components/sections/Emergency";
 // import { VisualGallery } from "./components/sections/VisualGallery";
 // import { Numbers } from "./components/sections/Numbers";
@@ -14,18 +15,28 @@ import { ServicesAutomobiles } from "./components/sections/ServicesAutomobiles";
 function App() {
   return (
     <Layout title="LocksmithLX - Locksmith Services in Los Angeles">
-      <Hero />
+      <RevealOnScroll>
+        <Hero />
+      </RevealOnScroll>
       {/* <Bar/> */}
       {/* <Numbers /> */}
-      <ServicesDigitalLocks />
-      <ServicesTraditionalsLocks />
-      <ServicesAutomobiles />
+      <RevealOnScroll>
+        <ServicesDigitalLocks />
+      </RevealOnScroll>
+      <RevealOnScroll>
+        <ServicesTraditionalsLocks />
+      </RevealOnScroll>
+      <RevealOnScroll>
+        <ServicesAutomobiles />
+      </RevealOnScroll>
       
       {/* <Bar/> */}
       
       {/* <Emergency /> */}
       {/* <Warranty/> */}
-      <MapPoints/>
+      <RevealOnScroll>
+        <MapPoints />
+      </RevealOnScroll>
       {/* <VisualGallery/> */}
       {/* <ReviewsCarousel /> */}
     </Layout>
