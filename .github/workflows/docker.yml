@@ -20,10 +20,10 @@ jobs:
         docker build --platform linux --tag rvillate/landing-page-formato-1 -f Dockerfile .
     - name: Publish docker image
       run: |
-        docker push aminespinoza/websiteplatzi:latest
+        docker push rvillate/landing-page-formato-1
     - name: App service auth
       uses: azure/webapps-deploy@v2
       with:
         app-name: 'amineswebapp '
         publish-profile: ${{ secrets.AZURE_WEBAPP_PUBLISH_PROFILE }}
-        images: 'rvillate/landing-page-formato-1:latest'
+        images: 'rvillate/landing-page-formato-1'
