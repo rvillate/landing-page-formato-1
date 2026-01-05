@@ -85,6 +85,9 @@ export const Footer = () => {
               </li>
             </ul>
           </div>
+          <div>
+            <h2>Version 1.0</h2>
+          </div>
         </div>
       </Container>
     </footer>
